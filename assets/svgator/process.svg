@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 360">
+<path d="M40 20V340" stroke="#17233d" stroke-opacity=".18" stroke-width="3" stroke-dasharray="8 10">
+<animate attributeName="stroke-dashoffset" from="180" to="0" dur="1.4s" fill="freeze"/></path>
+<g fill="#f97316"><circle cx="40" cy="55" r="9"><animate attributeName="r" values="0;9" dur=".35s" begin=".2s" fill="freeze"/></circle><circle cx="40" cy="180" r="9"><animate attributeName="r" values="0;9" dur=".35s" begin=".5s" fill="freeze"/></circle><circle cx="40" cy="305" r="9"><animate attributeName="r" values="0;9" dur=".35s" begin=".8s" fill="freeze"/></circle></g>
+</svg>

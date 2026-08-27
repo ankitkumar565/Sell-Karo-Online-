@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 170">
+<path d="M35 140 A125 125 0 0 1 285 140" fill="none" stroke="#17233d" stroke-opacity=".10" stroke-width="20" stroke-linecap="round"/>
+<path d="M35 140 A125 125 0 0 1 245 72" fill="none" stroke="#f97316" stroke-width="20" stroke-linecap="round" stroke-dasharray="390" stroke-dashoffset="390"><animate attributeName="stroke-dashoffset" from="390" to="65" dur=".9s" begin=".2s" fill="freeze"/></path>
+<circle cx="245" cy="72" r="7" fill="#17233d"><animate attributeName="r" values="4;8;4" dur="1.2s" begin="1s" repeatCount="indefinite"/></circle>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#f7f4ee"/>
+  <stop offset=".5" stop-color="#ffffff"/>
+  <stop offset="1" stop-color="#f1f4f7"/>
+ </linearGradient>
+ <radialGradient id="n1"><stop stop-color="#17233d" stop-opacity=".15"/><stop offset="1" stop-color="#17233d" stop-opacity="0"/></radialGradient>
+ <radialGradient id="o1"><stop stop-color="#f97316" stop-opacity=".18"/><stop offset="1" stop-color="#f97316" stop-opacity="0"/></radialGradient>
+ <linearGradient id="wave" x1="0" x2="1">
+  <stop stop-color="#17233d" stop-opacity=".09"/>
+  <stop offset=".5" stop-color="#f97316" stop-opacity=".08"/>
+  <stop offset="1" stop-color="#17233d" stop-opacity=".09"/>
+ </linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+ <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+   <path d="M80 0H0V80" fill="none" stroke="#17233d" stroke-opacity=".035"/>
+ </pattern>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#grid)"/>
+
+<circle cx="170" cy="120" r="320" fill="url(#n1)" filter="url(#blur)">
+ <animate attributeName="cx" values="170;320;170" dur="18s" repeatCount="indefinite"/>
+ <animate attributeName="cy" values="120;260;120" dur="15s" repeatCount="indefinite"/>
+</circle>
+<circle cx="1430" cy="170" r="280" fill="url(#o1)" filter="url(#blur)">
+ <animate attributeName="cx" values="1430;1280;1430" dur="16s" repeatCount="indefinite"/>
+ <animate attributeName="cy" values="170;310;170" dur="13s" repeatCount="indefinite"/>
+</circle>
+
+<path d="M-180 270 C170 40 360 430 690 220 S1220 60 1780 300"
+ fill="none" stroke="url(#wave)" stroke-width="180" stroke-linecap="round" opacity=".8">
+ <animate attributeName="d" dur="18s" repeatCount="indefinite"
+ values="M-180 270 C170 40 360 430 690 220 S1220 60 1780 300;
+         M-180 340 C180 520 410 80 720 320 S1300 470 1780 190;
+         M-180 270 C170 40 360 430 690 220 S1220 60 1780 300"/>
+</path>
+
+<path d="M-180 690 C180 470 400 820 720 630 S1260 470 1780 700"
+ fill="none" stroke="#17233d" stroke-opacity=".10" stroke-width="4">
+ <animate attributeName="d" dur="15s" repeatCount="indefinite"
+ values="M-180 690 C180 470 400 820 720 630 S1260 470 1780 700;
+         M-180 620 C170 820 440 520 750 710 S1290 850 1780 580;
+         M-180 690 C180 470 400 820 720 630 S1260 470 1780 700"/>
+</path>
+
+<g fill="none" stroke="#f97316" stroke-opacity=".18">
+ <circle cx="270" cy="680" r="70"><animate attributeName="r" values="70;105;70" dur="9s" repeatCount="indefinite"/></circle>
+ <circle cx="1360" cy="700" r="110"><animate attributeName="r" values="110;145;110" dur="11s" repeatCount="indefinite"/></circle>
+</g>
+
+<g fill="#17233d" fill-opacity=".08">
+ <circle cx="760" cy="120" r="5"><animate attributeName="cy" values="120;150;120" dur="5s" repeatCount="indefinite"/></circle>
+ <circle cx="840" cy="760" r="6"><animate attributeName="cy" values="760;720;760" dur="6s" repeatCount="indefinite"/></circle>
+ <circle cx="1120" cy="420" r="4"><animate attributeName="cy" values="420;390;420" dur="4.5s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
